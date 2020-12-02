@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>GIPHY API</title>
+  </head>
+  <body>
+    <div id="topbar">
+      <h1>GIPHY API</h1>
+      <input type="text" id="search" index="" placeholder="Search..." />
+      <select id="limit">
+        <option index="10">10</option>
+        <option index="20">20</option>
+        <option index="30">30</option>
+        <option index="40">40</option>
+        <option index="50">50</option>
+      </select>
+      <button type="button" id="btnSearch">Search</button>
+      <button type="button" id="btnTrending">Trending</button>
+
+      <div id="pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item active">
+            <a index="0" class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a index="1" class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a index="2" class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a index="3" class="page-link" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a index="4" class="page-link" href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a index="5" class="page-link" href="#">6</a>
+          </li>
+          <li class="page-item">
+            <a index="6" class="page-link" href="#">7</a>
+          </li>
+          <li class="page-item">
+            <a index="7" class="page-link" href="#">8</a>
+          </li>
+          <li class="page-item">
+            <a index="8" class="page-link" href="#">9</a>
+          </li>
+          <li class="page-item">
+            <a index="9" class="page-link" href="#">10</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="result"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
